@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>4.1 | Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h2 class="form-title">Customer Discount</h2>
+                <form action="processCustomer.jsp" method="POST">
+                    <label>Customer Code</label>
+                    <input type="text" name="customerCode" required>
+
+                    <label>Quantity</label>
+                    <input type="number" name="quantity" required>
+
+                    <label>Customer Type</label><br>
+                    <input type="radio" name="customerType" value="1" checked> Normal Customer
+                    <input type="radio" name="customerType" value="2"> Privilege Customer
+                    <br><br>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
