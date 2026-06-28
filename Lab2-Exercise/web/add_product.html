@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+</head>
+<body>
+    <h2>Product Inventory System - Add Product</h2>
+    <form action="InsertServlet" method="POST">
+        <label>Product Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Category:</label>
+        <input type="text" name="category" required><br><br>
+
+        <label>Price (RM):</label>
+        <input type="number" step="0.01" name="price" required><br><br>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" required><br><br>
+
+        <input type="submit" value="Add Product">
+        <input type="reset" value="Clear">
+    </form>
+    <br>
+    <a href="ViewServlet">View Product List</a>
+</body>
+</html>
